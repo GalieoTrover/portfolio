@@ -93,6 +93,11 @@ ol li::marker {
   content: ">";
 }
 
+.personal ul li span {
+  font-weight: normal;
+  color: black;
+}
+
 @media (max-width: 550px) {
   body {
     font-size: 20px;
