@@ -1,77 +1,109 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-	--accent: #ffb300;
+  --accent: #ffb300;
 }
 
 body {
-	text-align: center;
-	margin: 20px;
-	padding: 1em;
-	font-family: 'LibertinusSansRegular';
-	font-weight: bold;
-	font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 1em;
+  font-family: "LibertinusSansRegular";
+  font-weight: bold;
+  font-size: 20px;
 }
 
 h1,
 h2,
 h3 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 span {
-	color: var(--accent);
-	text-decoration: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .intro h1 {
-	margin-top: 20px;
-	text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .intro .dp img {
-	width: 250px;
-	height: 240px;
-	border: 4px solid var(--accent);
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+  width: 250px;
+  height: 250px;
+  border: 4px solid var(--accent);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .intro .social-links img {
-	width: 25px;
-	height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 table,
 th,
 td {
-	border: 1px solid black;
-	border-collapse: collapse;
-	text-align: center;
-	padding: 1em;
-	font-size: 18px;
-	margin-left: auto;
-	margin-right: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 1em;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table th {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 a {
-	color: black;
-	text-decoration-color: var(--accent);
-	text-decoration-thickness: 3px;
+  color: black;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
 }
 
-li {
-	padding-left: 1ch;
+.arrow {
+  padding-left: 1ch;
 }
 
-li::marker {
-	content: '▸';
+.arrow::marker {
+  content: "▸";
+}
+
+ul {
+  font-weight: bold;
+}
+
+ol {
+  font-weight: normal;
+}
+
+ol li {
+  font-size: 17px;
+  padding-left: 1ch;
+}
+
+ol li::marker {
+  content: ">";
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  dp img {
+    width: 150px;
+    height: 150px;
+  }
 }
