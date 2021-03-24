@@ -68,11 +68,11 @@ a {
   text-decoration-thickness: 3px;
 }
 
-.arrow {
+ul li {
   padding-left: 1ch;
 }
 
-.arrow::marker {
+ul li::marker {
   content: "▸";
 }
 
