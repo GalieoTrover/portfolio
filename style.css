@@ -46,6 +46,10 @@ span {
   height: 25px;
 }
 
+.intro .social-links img:hover {
+  transform: scale(0.8)
+}
+
 table,
 th,
 td {
