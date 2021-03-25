@@ -96,7 +96,7 @@ ol li {
 }
 
 ol li::marker {
-  content: ">";
+  content: "▹";
 }
 
 .personal ul li span {
