@@ -72,13 +72,13 @@ a {
   text-decoration-thickness: 3px;
 }
 
-.arrow {
+/* .arrow {
   padding-left: 1ch;
 }
 
 .arrow::marker {
   content: "▸";
-}
+}*/ 
 
 ul {
   font-weight: bold;
