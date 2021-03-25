@@ -93,9 +93,9 @@ ol li {
   padding-left: 1ch;
 }
 
-ol li::marker {
+/*ol li::marker {
   content: ">";
-}
+}*/
 
 .personal ul li span {
   font-weight: normal;
