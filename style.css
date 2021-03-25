@@ -72,16 +72,18 @@ a {
   text-decoration-thickness: 3px;
 }
 
-/* .arrow {
+.arrow {
   padding-left: 1ch;
 }
 
 .arrow::marker {
   content: "▸";
-}*/ 
+}
 
 ul {
   font-weight: bold;
+  display: inline-block;
+  text-align: left;
 }
 
 ol {
@@ -93,9 +95,9 @@ ol li {
   padding-left: 1ch;
 }
 
-/*ol li::marker {
+ol li::marker {
   content: ">";
-}*/
+}
 
 .personal ul li span {
   font-weight: normal;
