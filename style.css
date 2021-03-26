@@ -20,6 +20,7 @@ h1,
 h2,
 h3 {
   text-decoration: underline;
+  text-align: left;
 }
 
 span {
@@ -55,11 +56,11 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-  text-align: center;
+  /* text-align: center; */
   padding: 1em;
   font-size: 18px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 table th {
@@ -81,7 +82,7 @@ a {
 }
 
 ul {
-  font-weight: bold;
+  /* font-weight: bold; */
   display: inline-block;
   text-align: left;
 }
@@ -96,13 +97,31 @@ ol li {
 }
 
 ol li::marker {
+  /* content: "⮚"; */
   content: "›";
+}
+
+.objective,
+.projects,
+.workex,
+.hobbies,
+.personal {
+  text-align: left;
 }
 
 .personal ul li span {
   font-weight: normal;
   color: black;
 }
+
+/* .nested {
+  margin: 15px;
+} */
+
+/* .nested::marker {
+  content: "≫";
+  content: "›";
+} */
 
 @media (max-width: 550px) {
   body {
