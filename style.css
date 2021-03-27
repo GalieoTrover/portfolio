@@ -61,11 +61,8 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-  /* text-align: center; */
   padding: 1em;
   font-size: 18px;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 table th {
@@ -87,7 +84,6 @@ a {
 }
 
 ul {
-  /* font-weight: bold; */
   display: inline-block;
   text-align: left;
 }
@@ -102,7 +98,6 @@ ol li {
 }
 
 ol li::marker {
-  /* content: "⮚"; */
   content: "›";
 }
 
@@ -117,28 +112,4 @@ ol li::marker {
 .personal ul li span {
   font-weight: normal;
   color: black;
-}
-
-/* .nested {
-  margin: 15px;
-} */
-
-/* .nested::marker {
-  content: "≫";
-  content: "›";
-} */
-
-@media (max-width: 550px) {
-  body {
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 35px;
-  }
-
-  dp img {
-    width: 150px;
-    height: 150px;
-  }
 }
