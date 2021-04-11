@@ -1,104 +1,110 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  --accent: #ffb300;
+	--accent: #ffb300;
 }
 
 body {
-  text-align: center;
-  margin: 20px;
-  padding: 1em;
-  font-family: "LibertinusSansRegular";
-  font-weight: bold;
-  font-size: 20px;
+	text-align: center;
+	margin: 20px;
+	padding: 1em;
+	font-family: 'LibertinusSansRegular';
+	font-weight: bold;
+	font-size: 20px;
 }
 
 h1,
 h2,
 h3 {
-  text-decoration: underline;
-  text-align: left;
+	text-decoration: underline;
+	text-align: left;
 }
 
 h3 {
-  box-sizing: content-box;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  text-decoration: none;
-  max-width: 170px;
-  color: black;
+	box-sizing: content-box;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	text-decoration: none;
+	max-width: 170px;
+	color: black;
 }
 
 .intro h1 {
-  margin-top: 20px;
-  text-align: center;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.intro .dp {
+	width: 250px;
+	height: 250px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .intro .dp img {
-  width: 250px;
-  height: 250px;
-  border: 4px solid var(--accent);
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+	width: 100%;
+	height: auto;
+	border: 4px solid var(--accent);
+	display: block;
+	box-sizing: border-box;
 }
 
 .intro .social-links img {
-  width: 25px;
-  height: 25px;
+	width: 25px;
+	height: 25px;
 }
 
 .intro .social-links img:hover {
-  transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 table,
 th,
 td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 1em;
-  font-size: 18px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0.5em;
+	font-size: 18px;
 }
 
 table th {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 a {
-  color: black;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 3px;
+	color: black;
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: 3px;
 }
 
 .arrow {
-  padding-left: 1ch;
+	padding-left: 1ch;
 }
 
 .arrow::marker {
-  content: "▸";
+	content: '▸';
 }
 
 ul {
-  display: inline-block;
-  text-align: left;
+	display: inline-block;
+	text-align: left;
 }
 
 ol {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 ol li {
-  font-size: 17px;
-  padding-left: 1ch;
+	font-size: 17px;
+	padding-left: 1ch;
 }
 
 ol li::marker {
-  content: "›";
+	content: '›';
 }
 
 .objective,
@@ -106,10 +112,40 @@ ol li::marker {
 .workex,
 .hobbies,
 .personal {
-  text-align: left;
+	text-align: left;
 }
 
 .personal ul li span {
-  font-weight: normal;
-  color: black;
+	font-weight: normal;
+	color: black;
+}
+
+@media (max-width: 768px) {
+	.intro {
+		padding-left: 3em;
+		margin-bottom: 2rem;
+	}
+
+	.intro .dp,
+	.intro .name {
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		margin: 2rem 0 1rem 0;
+	}
+
+	.workex {
+		margin-bottom: 1rem;
+	}
+
+	.courses {
+		max-width: 50%;
+	}
+
+	.table {
+		padding: 0;
+		width: 50%;
+		font-size: 16px;
+	}
 }
